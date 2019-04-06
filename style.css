@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "Understock";
+	src: url('fonts/Understock/UnderstockRough.otf') format('opentype');
+	line-height: 1.6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(212, 223, 218);
+}
+
+.body-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 8%;
+  height: 8%;
+}
+
+.title > h1 {
+  font-size: 12vh;
+  font-family: "Understock", sans-serif;
+	color: rgb(49, 62, 57);
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
+  padding-bottom: 10px;
+}
+
+.title > h2 {
+	font-size: 7vh;
+  font-family: "Muli", sans-serif;
+	color: rgb(49, 62, 57);
+	font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.divider {
+  width: 100%;
+  height: 7px;
+  background-color: rgb(49, 62, 57);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-family: 'Muli', sans-serif !important;
+}
+
+.content-container {
+  padding: 20px;
+}
+
+.content-container > h1 {
+  font-family: 'Muli', sans-serif !important;
+}
+
+p {
+  font-family: 'Muli', sans-serif !important;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.card-text {
+  font-size: 1rem;
+}
