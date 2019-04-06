@@ -16,8 +16,8 @@ var MarkerIcon = L.Icon.extend({
 		}
 	});
 
-var wIcon = new MarkerIcon({iconUrl: 'images/wcheck.png'}),
-    woIcon = new MarkerIcon({iconUrl: 'images/wocheck.png'});
+//var wIcon = new MarkerIcon({iconUrl: 'images/wcheck.png'}),
+//    woIcon = new MarkerIcon({iconUrl: 'images/wocheck.png'});
 
 var Acadia = L.marker([44.376789, -68.255569]).bindPopup("<br/><img src='images/acadia.png' alt='acadia' width='300px'/>").addTo(mymap),
     American = L.marker([14.2583, -170.6833]).bindPopup("<br/><img src='images/american.png' alt='american' width='300px'/>").addTo(mymap),
