@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Park Nationalists of America</title>
+    <title>Parks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='icon' href='images/logo.png'>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
   </head>
 
   <body>
     <div class="body-container">
       <div style="height: 60px"></div>
       <div class="title">
-        <h1><img src="images/logo.png" class="logo" alt="logo">Parks</h1>
+        <h1><img src="images/logo.png" class="logo" alt="logo">Park Nationalists</h1>
         <div class="divider"></div>
       </div>
 
@@ -50,7 +53,13 @@
 
       <div class="content-container">
         <div class="title"><h2><b>Map</b></h2></div>
+        <div id="mapid"></div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+     crossorigin=""></script>
+     <script src="map.js"></script>
   </body>
 </html>
