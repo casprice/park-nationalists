@@ -51,7 +51,7 @@ var Acadia = L.marker([44.376789, -68.255569]).bindPopup("<br/><img src='images/
     Haleakala = L.marker([20.72, -156.17]).bindPopup("<br/><img src='images/haleakala.png' alt='haleakala' width='300px'/>").addTo(mymap),
     Hawaii = L.marker([19.38, -155.20]).bindPopup("<br/><img src='images/hawaii.png' alt='hawaii' width='300px'/>").addTo(mymap),
     HotSprings = L.marker([34.51, -93.05]).bindPopup("<br/><img src='images/hotsprings.png' alt='hotsprings' width='300px'/>").addTo(mymap),
-    Isle = L.marker([48.10, -88.55], {icon: woIcon}).bindPopup("<br/><img src='images/isle.png' alt='isle' width='300px'/>").addTo(mymap),
+    Isle = L.marker([48.10, -88.55]).bindPopup("<br/><img src='images/isle.png' alt='isle' width='300px'/>").addTo(mymap),
     JoshTree = L.marker([33.79, -115.90]).bindPopup("<br/><img src='images/joshtree.png' alt='joshtree' width='300px'/>").addTo(mymap),
     Katmai = L.marker([58.50, -155.00]).bindPopup("<br/><img src='images/katmai.png' alt='katmai' width='300px'/>").addTo(mymap),
     Kenalifjords = L.marker([59.92, -149.65]).bindPopup("<br/><img src='images/kenalifjords.png' alt='kenalifjords' width='300px'/>").addTo(mymap),
