@@ -50,14 +50,91 @@ body {
   margin-bottom: 20px;
 }
 
-nav {
-  margin: 20px 0;
+/*** For collapsable menu on small screens ***/
+a.menu-link {
+    float: right;
+    display: block;
+    padding: 1em;
+		color: black;
+		background-color: rgb(245, 241, 241);
+		border-radius: 5px;
 }
 
-.navbar-nav {
-  width: 100%;
-  justify-content: space-around;
+a.menu-link:hover {
+	background-color: rgb(231, 231, 231);
+	color: black;
+	text-decoration: none;
 }
+
+nav[role=navigation] {
+	margin: 0 auto;
+	background-color: rgb(245, 241, 241);
+	border-radius: 5px;
+	clear: both;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.js nav[role=navigation] {
+	overflow: hidden;
+	max-height: 0;
+}
+
+nav[role=navigation].active {
+	max-height: 15em;
+}
+
+nav[role=navigation] li {
+	list-style: none;
+}
+
+nav[role=navigation] ul {
+	margin: 10px;
+	justify-content: space-around;
+}
+
+nav[role=navigation] li a {
+	display: block;
+	padding: 0.7em;
+	margin: 0.05em;
+	color: rgb(158, 159, 156);
+	transition: 0.2s;
+}
+
+nav[role=navigation] li a:hover {
+	background-color: rgb(231, 231, 231);
+	color: black;
+	border-radius: 5px;
+}
+
+nav[role=navigation] li .current {
+	color: black;
+}
+
+@media screen and (min-width: 48.25em) {
+	a.menu-link {
+	   display: none;
+	}
+	.js nav[role=navigation] {
+		max-height: none;
+	}
+	nav[role=navigation] ul {
+		margin: 0 0 0 -0.25em;
+		border: 0;
+	}
+
+	nav[role=navigation]  li {
+		display: inline-block;
+		margin: 0 0.25em;
+	}
+	nav[role=navigation] li a {
+		border: 0;
+	}
+}
+/*** ***/
 
 .nav-link {
   font-family: 'Muli', sans-serif !important;
@@ -69,12 +146,100 @@ nav {
 
 .content-container > h1 {
   font-family: 'Muli', sans-serif !important;
+	margin-top: 20px;
 }
 
 p {
   font-family: 'Muli', sans-serif !important;
   font-size: 1.3rem;
   line-height: 1.6;
+	padding: 10px 0;
+}
+
+.card-img-top {
+	cursor: pointer;
+}
+
+.card-img-top:hover {
+	opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 .card-text {
@@ -83,4 +248,20 @@ p {
 
 #mapid {
 	height: 700px;
+}
+
+@media screen and (max-width: 60em) {
+		.logo {
+			display: none;
+		}
+}
+
+@media screen and (max-width: 48.25em) {
+	.title > h1 {
+	  font-size: 8vw;
+	}
+
+	p {
+		font-size: 1rem;
+	}
 }

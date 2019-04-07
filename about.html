@@ -19,33 +19,33 @@
         <div class="divider"></div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
+      <a href="#menu" class="menu-link">Menu</a>
+      <nav id="menu" role="navigation">
+        <ul class="navbar">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="environment.html">Environment</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link current" href="#">About</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="parks.html">Parks</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="environment.html">Environment</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="joinus.html">Join Us</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parks.html">Parks</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="donate.html">Donate</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="joinus.html">Join Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+        </ul>
       </nav>
 
       <div class="content-container">
@@ -60,7 +60,12 @@
 
            <div class='col-3 col-md-3'>
              <div class="card">
-              <img src="images/parkenthusiasts.jpg" class="card-img-top" alt="Park Enthusiasts">
+              <img id="parkenthusiasts" src="images/parkenthusiasts.jpg" class="card-img-top" alt="Park Enthusiasts">
+              <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img1">
+                <div id="caption"></div>
+              </div>
               <div class="card-body">
                 <p class="card-text">Casey and Nada advertise their political affiliation.</p>
               </div>
@@ -96,6 +101,7 @@
 
         </div>
       </div>
+      <br>
 
       <p> Join in our journey by looking through the website to get some inspiration and support them in reaching their goal.
       Also the environment needs you. These beautiful parks depend on you doing your part and not being a dick! Learn more about how you can help here!
@@ -115,6 +121,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="modal.js"></script>
+
   </body>
 
 </html>
